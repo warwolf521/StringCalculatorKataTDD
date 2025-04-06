@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/warwolf/tareas/FTYAC_tarea1
+collected 1 item
+
+test_Calculator.py F                                                     [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+>       assert add("1,2") == 3
+E       AssertionError: assert 0 == 3
+E        +  where 0 = add('1,2')
+
+test_Calculator.py:5: AssertionError
+=========================== short test summary info ============================
+FAILED test_Calculator.py::test_add - AssertionError: assert 0 == 3
+============================== 1 failed in 0.04s ===============================
