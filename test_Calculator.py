@@ -49,3 +49,10 @@ def test_add_step6():
     assert add("//;\n1001;1002") == 0
     assert add("//-\n1001-1002") == 0
     assert add("//?\n3?1002") == 3
+
+def test_add_step7():
+    assert add("//[***]\n1***2***3") == 6
+    assert add("//[**]\n1**2**3") == 6
+    assert add("//[/*]\n1/*2/*3") == 6
+    assert add("//[//]\n1//2//3//4") == 10
+    assert add("//[@@**/]\n1@@**/2@@**/3@@**/4@@**/5") == 15
