@@ -3,26 +3,6 @@ platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
 rootdir: /home/warwolf/tareas/FTYAC_tarea1
 collected 3 items
 
-test_Calculator.py ..F                                                   [100%]
+test_Calculator.py ...                                                   [100%]
 
-=================================== FAILURES ===================================
-________________________________ test_add_step3 ________________________________
-
-    def test_add_step3():
->       assert add("1\n2") == 3
-
-test_Calculator.py:17: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-source/calculator.py:3: in add
-    return sum(int(number) for number in numbersSplited)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-.0 = <list_iterator object at 0x7fc2456d79a0>
-
->   return sum(int(number) for number in numbersSplited)
-E   ValueError: invalid literal for int() with base 10: '1\n2'
-
-source/calculator.py:3: ValueError
-=========================== short test summary info ============================
-FAILED test_Calculator.py::test_add_step3 - ValueError: invalid literal for i...
-========================= 1 failed, 2 passed in 0.02s ==========================
+============================== 3 passed in 0.01s ===============================
