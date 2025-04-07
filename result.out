@@ -3,18 +3,6 @@ platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
 rootdir: /home/warwolf/tareas/FTYAC_tarea1
 collected 1 item
 
-test_Calculator.py F                                                     [100%]
+test_Calculator.py .                                                     [100%]
 
-=================================== FAILURES ===================================
-___________________________________ test_add ___________________________________
-
-    def test_add():
-        assert add("1,2") == 3
->       assert add("4,4") == 8
-E       AssertionError: assert 3 == 8
-E        +  where 3 = add('4,4')
-
-test_Calculator.py:6: AssertionError
-=========================== short test summary info ============================
-FAILED test_Calculator.py::test_add - AssertionError: assert 3 == 8
-============================== 1 failed in 0.01s ===============================
+============================== 1 passed in 0.01s ===============================

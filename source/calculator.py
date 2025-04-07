@@ -1,2 +1,3 @@
 def add(numbers: str) -> int:
-    return 3
+    numbersSplited = numbers.split(",")
+    return int(numbersSplited[0]) + int(numbersSplited[1])
