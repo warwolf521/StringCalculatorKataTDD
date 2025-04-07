@@ -2,6 +2,8 @@ def add(numbers: str) -> int:
     if numbers.startswith("//"):
         delimiter = numbers[2:numbers.index("\n")]
         numbers = numbers[numbers.index("\n") + 1:]
+        if delimiter.startswith("[") and delimiter.endswith("]"):
+            delimiter = delimiter[1:-1]
         numbers = numbers.replace(delimiter, ",")
     else:
         numbers = numbers.replace("\n", ",")
