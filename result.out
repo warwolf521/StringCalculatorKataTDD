@@ -3,33 +3,6 @@ platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
 rootdir: /home/warwolf/tareas/FTYAC_tarea1
 collected 8 items
 
-test_Calculator.py .......F                                              [100%]
+test_Calculator.py ........                                              [100%]
 
-=================================== FAILURES ===================================
-________________________________ test_add_step8 ________________________________
-
-    def test_add_step8():
->       assert add("//[***][%]\n1***2%3") == 6
-
-test_Calculator.py:61: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-numbers = '1***2%3'
-
-    def add(numbers: str) -> int:
-        if numbers.startswith("//"):
-            delimiter = numbers[2:numbers.index("\n")]
-            numbers = numbers[numbers.index("\n") + 1:]
-            if delimiter.startswith("[") and delimiter.endswith("]"):
-                delimiter = delimiter[1:-1]
-            numbers = numbers.replace(delimiter, ",")
-        else:
-            numbers = numbers.replace("\n", ",")
-        numbersSplited = numbers.split(",")
->       numbersSplited = [int(number) for number in numbersSplited if int(number) <= 1000]
-E       ValueError: invalid literal for int() with base 10: '1***2%3'
-
-source/calculator.py:11: ValueError
-=========================== short test summary info ============================
-FAILED test_Calculator.py::test_add_step8 - ValueError: invalid literal for i...
-========================= 1 failed, 7 passed in 0.04s ==========================
+============================== 8 passed in 0.01s ===============================
