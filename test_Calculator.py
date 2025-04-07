@@ -48,4 +48,4 @@ def test_add_step6():
     assert add("1001,1002") == 0
     assert add("//;\n1001;1002") == 0
     assert add("//-\n1001-1002") == 0
-    assert add("//?\3?1002") == 3
+    assert add("//?\n3?1002") == 3

@@ -6,7 +6,8 @@ def add(numbers: str) -> int:
     else:
         numbers = numbers.replace("\n", ",")
     numbersSplited = numbers.split(",")
-    negatives = [int(number) for number in numbersSplited if int(number) < 0]
+    numbersSplited = [int(number) for number in numbersSplited if int(number) <= 1000]
+    negatives = [number for number in numbersSplited if number < 0]
     if negatives:
         raise Exception(f"negatives not allowed: {', '.join(map(str, negatives))}")
     return sum(int(number) for number in numbersSplited)
