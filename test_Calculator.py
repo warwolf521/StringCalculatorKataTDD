@@ -41,4 +41,11 @@ def test_add_step5():
     with pytest.raises(Exception) as excinfo:
         add("//;\n-5;-9;15;-29")
     assert str(excinfo.value) == "negatives not allowed: -5, -9, -29"
-    
+
+def test_add_step6():
+    assert add("2,1001") == 2
+    assert add("1000,1000") == 2000
+    assert add("1001,1002") == 0
+    assert add("//;\n1001;1002") == 0
+    assert add("//-\n1001-1002") == 0
+    assert add("//?\3?1002") == 3
