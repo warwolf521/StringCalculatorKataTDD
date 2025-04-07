@@ -1,6 +1,6 @@
 # TDD-String Calculator
 
-Tarea realizada en python, usando el framework de testeo PyTest.\
+Tarea realizada en python, usando el framework de testeo PyTest.
 
 Se realizo un par de commit o mas por cada paso solicitado en el ejercicio de Kata, en cada uno se explicita primero el conjunto de test a lograr, para posteriormente resolver estos mediante la implementacion minima para esto.
 
