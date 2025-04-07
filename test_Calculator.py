@@ -18,3 +18,9 @@ def test_add_step3():
     assert add("4\n4,4") == 12
     assert add("8,10\n12,14") == 44
     assert add("15\n15,30\n45") == 105
+
+def test_add_step4():
+    assert add("//;\n1;2") == 3
+    assert add("//;\n4;4;4") == 12
+    assert add("//-\n8-10-12-14") == 44
+    assert add("//?\n5?9?15?29") == 58
