@@ -1,8 +1,18 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0
 rootdir: /home/warwolf/tareas/FTYAC_tarea1
-collected 4 items
+collected 5 items
 
-test_Calculator.py ....                                                  [100%]
+test_Calculator.py ....F                                                 [100%]
 
-============================== 4 passed in 0.01s ===============================
+=================================== FAILURES ===================================
+________________________________ test_add_step5 ________________________________
+
+    def test_add_step5():
+>       with pytest.raises(Exception) as excinfo:
+E       Failed: DID NOT RAISE <class 'Exception'>
+
+test_Calculator.py:29: Failed
+=========================== short test summary info ============================
+FAILED test_Calculator.py::test_add_step5 - Failed: DID NOT RAISE <class 'Exc...
+========================= 1 failed, 4 passed in 0.02s ==========================
