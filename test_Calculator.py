@@ -1,7 +1,7 @@
 import pytest
 from source.calculator import add
 
-def test_add():
+def test_add_step1():
     assert add("1,2") == 3
     assert add("4,4") == 8
     assert add("8,10") == 18

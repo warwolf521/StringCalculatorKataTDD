@@ -9,11 +9,12 @@ test_Calculator.py F                                                     [100%]
 ___________________________________ test_add ___________________________________
 
     def test_add():
->       assert add("1,2") == 3
-E       AssertionError: assert 0 == 3
-E        +  where 0 = add('1,2')
+        assert add("1,2") == 3
+>       assert add("4,4") == 8
+E       AssertionError: assert 3 == 8
+E        +  where 3 = add('4,4')
 
-test_Calculator.py:5: AssertionError
+test_Calculator.py:6: AssertionError
 =========================== short test summary info ============================
-FAILED test_Calculator.py::test_add - AssertionError: assert 0 == 3
-============================== 1 failed in 0.04s ===============================
+FAILED test_Calculator.py::test_add - AssertionError: assert 3 == 8
+============================== 1 failed in 0.01s ===============================
